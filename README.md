@@ -25,6 +25,8 @@ Post-запрос выполняется по адресу http://localhost:8080
 {  
     "id": 1  
 }  
+![изображение](https://github.com/user-attachments/assets/67c2cfda-fa5a-446d-af7d-9af468610173)
+
 ### Запрос на получение существующей записи по id
 Get-запрос выполняется по адресу http://localhost:8080/files/{fileId}, где fileId - id необходимой записи.  
 Например, если выполнить запрос по адресу http://localhost:8080/files/1, получим ответ в виде:  
@@ -34,8 +36,12 @@ Get-запрос выполняется по адресу http://localhost:8080/
     "creation_date": "2024-09-01T16:50:13.4714095",  
     "description": "Hello"  
 }  
+![изображение](https://github.com/user-attachments/assets/15fbe7fa-e623-443d-bd2d-e73f60bae758)
+
 ### Запрос на получение несуществующей записи по id
 Если записи с указанным id не существует, то при запросе http://localhost:8080/files/111 получим ответ:  
 {  
     "message": "File with id = 111 not found"  
 }  
+![изображение](https://github.com/user-attachments/assets/83711ab3-0caf-4f14-b520-61b50bce9e58)
+
